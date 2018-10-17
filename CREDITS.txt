@@ -1,0 +1,9 @@
+﻿# Image Credits
+
+Most images courtesy of Unsplash (https://unsplash.com).
+
+-Main Banner/Moutain Scape: Paulo Simões Mendes (https://unsplash.com/photos/V8YzvXKLwDw)
+-Education Banner/Book Image: Brandi Redd(https://unsplash.com/@brandi1)
+-Work Banner/Desk Image: Andyone(https://unsplash.com/@andyoneru)
+-Projects Banner/Lightbulbs Image: Callum Shaw (https://unsplash.com/@callumshaw99)
+-Misc Banner/Coffee Image: Ross Parmly (https://unsplash.com/@rparmly)
