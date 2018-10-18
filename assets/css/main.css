@@ -1356,13 +1356,6 @@
 		#header h1 {
 			margin-bottom: 0.5em;
 		}
-		
-		#header .playlist {
-			position: relative;
-			top: 0;
-			left: 0;
-			z-index: 1;
-		}
 
 		#header .inner {
 			position: relative;
@@ -1370,35 +1363,6 @@
 			padding-bottom: 2em;
 		}
 		
-		#header .navigation {
-			position: relative;
-			z-index: 1;
-			bottom: 10px;
-			 /*display: inline-block;
-			height: 100%;
-			vertical-align: bottom;
-			width: 0px;*/
-		}
-		
-		#header .tablink {
-			background-color: transparent;
-			color: #ffffff !important;
-			float: left;
-			border: none;
-			outline: none;
-			cursor: pointer;
-			margin: 0.25em 0.25em 0.25em 0.25em;
-			font-size: 17px;
-		}
-		
-		#header .tablink:hover {
-			background-color: white;
-			color: #999999 !important;
-			border: none;
-			outline: none;
-		}
-		
-
 		#header.alt {
 			height: 20em;
 			min-height: 20em;
@@ -1442,10 +1406,6 @@
 				transition: opacity 2s ease;
 				opacity: 1;
 			}
-			
-			#header.alt .playlist{
-				left:0;
-			}
 
 		body.is-loading #header.alt:before {
 			background-color: black;
@@ -1484,6 +1444,45 @@
 				}
 
 		}
+
+/*Navigation Tabs withing Header
+	Note: the navigation bar/tablinks are not associated with the header because they do not follow the base text rules*/
+		.navigation {
+			position: relative;
+			z-index: 1;
+			bottom: 10px;
+			-moz-transition: opacity 2s ease;
+			-webkit-transition: opacity 2s ease;
+			-ms-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+			opacity: 1;
+		}
+		
+		body.is-loading .navigation {
+			background-color: black;
+		}
+		
+		body.is-loading .navigation{
+			opacity: 0;
+		}
+		
+		.tablink {
+			background-color: transparent;
+			color: #ffffff;
+			float: left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			margin: 0.25em 0.25em 0.25em 0.25em;
+			font-size: 17px;
+		}
+		
+		.tablink:hover {
+			background-color: white;
+			color: #999999 !important;
+			border: none;
+			outline: none;
+		}
 		
 
 /* Main */
@@ -1498,6 +1497,11 @@
 		float: left;
 		width: 50%;
 		padding: 15px;
+	}
+	
+	#main .properParagraph{
+		text-indent: 30px;
+		margin: 10px;
 	}
 	
 	#main:after{
